@@ -18,7 +18,9 @@ process external content. Some are internet-facing; others encounter untrusted
 documents, messages, or tool results inside an organization. Prompt injection is
 listed as **LLM01 in the OWASP Top 10 for LLM Applications, 2025 edition**. OWASP
 describes both direct and indirect injection and recommends layered mitigations.
-[OWASP LLM01](https://genai.owasp.org/llmrisk/llm01-prompt-injection/)
+[OWASP LLM Top 10: official project page](https://owasp.org/projects/top-10-for-large-language-model-applications).
+For the risk definitions used in this lab, see the
+[OWASP Top 10 for LLM Applications, 2025 report (PDF)](https://owasp.github.io/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf).
 
 The connection to application security is the handling of untrusted input. SQL
 injection and prompt injection are useful analogies, but their defenses are not
@@ -97,7 +99,7 @@ Application control: inspect the reply before releasing it to the user
 A useful description of the failure is that attacker-controlled text influenced
 the model to disclose protected context. Critical authorization checks must remain
 outside the model.
-[OWASP LLM07](https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/)
+[OWASP 2025 report, LLM07: System Prompt Leakage (PDF)](https://owasp.github.io/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf)
 
 ### 3.2 Attack techniques and observed outcomes
 
@@ -159,8 +161,7 @@ The first three categories describe related aspects of secret extraction. They a
 not proof of four separate vulnerabilities chained in one execution. OWASP also
 emphasizes that the system prompt itself should not be treated as a secret or as
 a security control.
-[OWASP LLM07](https://genai.owasp.org/llmrisk/llm072025-system-prompt-leakage/),
-[OWASP LLM09](https://genai.owasp.org/llmrisk/llm092025-misinformation/)
+[OWASP 2025 report, LLM07 and LLM09 (PDF)](https://owasp.github.io/www-project-top-10-for-large-language-model-applications/assets/PDF/OWASP-Top-10-for-LLMs-v2025.pdf)
 
 ## 4. Defense phase
 
